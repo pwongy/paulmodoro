@@ -5,7 +5,7 @@ A simple, Python-based pomodoro timer.
 During my PhD, I found that it was often helpful to have a system for getting things done. I tried a number of different tools and eventually settled on the combination of a brown noise generator, earplugs/headphones, and a pomodoro timer for times when I really needed to focus. However, all existing pomodoro timers for Windows were either too clunky, too complicated, or visually unappealing. As such—like any good engineer—I decided to write my own.
 
 ## Features
-- Minimal design
+- Minimalist design
 - Cross platform (tested on Windows and OSX)
 - Both mouse and keyboard interaction, for convenience
 - Three sound options:
