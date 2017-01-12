@@ -1,1 +1,1 @@
-python paulmodoro.py -b -l -z
+python paulmodoro.py -z
