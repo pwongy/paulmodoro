@@ -11,21 +11,11 @@
 #   Andrian Sue - OS X implementations
 # ----------------------------------------------------------------------------
 
-# Python 2/3 compatibility via python-future package:
-#   http://python-future.org/pasteurize.html#backwards-conversion
-from __future__ import print_function
-from __future__ import division
-from __future__ import unicode_literals
-from __future__ import absolute_import
-
 # Import modules
 import sys
 import getopt
 import time
-
-from builtins import range
-from future import standard_library
-standard_library.install_aliases()
+from builtins import print
 
 try:
     import pyglet       # For GUI

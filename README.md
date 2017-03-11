@@ -17,7 +17,7 @@ During my PhD, I found that it was crucial to have a system for getting things d
   - Full screen (for preventing distractions during non-computer work, or when you have a spare monitor)
 
 ## Requirements
-- Python 3
 - Pyglet 1.2.4
+- Future 0.16.0
 
 _A Nightcap Initiative_
