@@ -1,6 +1,6 @@
 # ----------------------------------------------------------------------------
 # Paul-modoro - A simple, cross-platform pomodoro timer
-# Copyright (c) Paul Wong 2015-16
+# Copyright (c) Paul Wong 2015-17
 #
 # Inspired by:
 #   VNGRS's PomoWear Android app, available via the Play Store
@@ -48,24 +48,26 @@ elif sys.platform.startswith("darwin"):
 
 # Initialise constants
 app_name = "Paul-modoro"
-version_no = "0.10.4"
-build_date = "3 Nov 2016"
+version_no = "0.10.5"
+build_date = "11 Mar 2017"
 tag_line = "A Nightcap Initiative"
+
+timer_pomodoro_end = "Stop"
+timer_break_end = "Focus"
 
 message_init = "Time to get things done"
 message_pomodoro = "Focus on your work"
 message_pomodoro_reset = "Let’s try that one again"
-timer_pomodoro_end = "Stop"
 message_break = "Chill out for a bit"
 message_break_stop = "Seriously, go for a walk"
-timer_break_end = "Focus"
 message_break_end = "Get in the zone"
+
 instruct_start = "SPACE to start"
 instruct_stop = "SPACE to stop"
 instruct_nothing = "SPACE to waste time"
-instruct1 = instruct_start
 instruct_quit = "ESC to quit"
 instruct_exit_fs = "ESC to exit full screen"
+instruct1 = instruct_start
 instruct2 = instruct_quit
 
 font_size_instruct_win = 12
@@ -200,11 +202,11 @@ for opt, arg in opts:
 
 # Load resources
 if bg_sound == key_sound_brown:
-    background_noise = pyglet.media.load("resources/brown_noise.wav", streaming=False)
+    background_noise = pyglet.media.load("resources/bg_brown_noise.wav", streaming=False)
 elif bg_sound == key_sound_cafe:
-    background_noise = pyglet.media.load("resources/restaurant_ambiance_soundBible.wav", streaming=False)
+    background_noise = pyglet.media.load("resources/bg_restaurant_ambiance.wav", streaming=False)
 elif bg_sound == key_sound_ticking:
-    background_noise = pyglet.media.load("resources/clock_ticking.wav", streaming=False)
+    background_noise = pyglet.media.load("resources/bg_clock_ticking.wav", streaming=False)
 alarm = pyglet.media.load('resources/bell_down_short.wav', streaming=False)
 
 
